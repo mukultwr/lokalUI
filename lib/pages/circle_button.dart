@@ -21,7 +21,7 @@ class CButton extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color:Color(hexColor(clrval)),
-              border: Border.all(width: 1)
+              
             ),)
     );
   }

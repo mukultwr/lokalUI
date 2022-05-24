@@ -38,11 +38,10 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   "FootBall Boots",
                   style: GoogleFonts.montserrat(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                    
- 
-                  ),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      letterSpacing: .2,
+                      color: Color(0Xff252B42)),
                 ),
               ),
               Container(
@@ -68,7 +67,10 @@ class HomePage extends StatelessWidget {
                     SizedBox(width: 11.83),
                     Text("10 Reviews",
                         style: GoogleFonts.montserrat(
-                            fontSize: 14, fontWeight: FontWeight.w700))
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: .2,
+                            color: Color(0Xff737373)))
                   ],
                 ),
               ),
@@ -78,6 +80,8 @@ class HomePage extends StatelessWidget {
                   "\$1,139.33",
                   style: GoogleFonts.montserrat(
                     fontSize: 24,
+                     color: Color(0Xff252B42),
+                       letterSpacing: .1,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -90,6 +94,8 @@ class HomePage extends StatelessWidget {
                       style: GoogleFonts.montserrat(
                         fontSize: 14,
                         fontWeight: FontWeight.w700,
+                        letterSpacing: .2,
+                        color: Color(0Xff737373),
                       ),
                     ),
                     Text(
@@ -97,6 +103,8 @@ class HomePage extends StatelessWidget {
                       style: GoogleFonts.montserrat(
                         fontSize: 14,
                         fontWeight: FontWeight.w700,
+                         letterSpacing: .2,
+                          color: Color(0Xff23A6F0)
                       ),
                     ),
                   ])),
@@ -111,6 +119,7 @@ class HomePage extends StatelessWidget {
                   style: GoogleFonts.montserrat(
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
+                    color: Color(0Xff858585)
                   ),
                 ),
               ),
@@ -135,28 +144,31 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(57, 1.5, 13, 13.83),
+                margin: EdgeInsets.fromLTRB(55, 1.5, 13, 13.83),
                 child: Row(
                   children: [
-                   FlatButton(  
-                child: Text('Select Options', style: GoogleFonts.montserrat(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700,
-                  ),),
-                  color: Colors.blueAccent,  
-                textColor: Colors.white,   
-                onPressed: () {},  
-              ),  
-              SizedBox(width: 10),
-              CIcons(Icons.favorite_border),
-              SizedBox(width: 10),
-              CIcons(Icons.shopping_cart),
-              SizedBox(width: 10),
-              CIcons(Icons.remove_red_eye),
+                    FlatButton(
+                      child: Text(
+                        'Select Options',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0Xff858585)
+                        ),
+                      ),
+                      color: Colors.blueAccent,
+                      textColor: Colors.white,
+                      onPressed: () {},
+                    ),
+                    SizedBox(width: 10),
+                    CIcon(Icons.favorite_border),
+                    SizedBox(width: 10),
+                    CIcon(Icons.shopping_cart),
+                    SizedBox(width: 10),
+                    CIcon(Icons.remove_red_eye),
                   ],
                 ),
               ),
-              
             ],
           ),
         ),
